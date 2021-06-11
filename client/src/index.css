@@ -1,0 +1,33 @@
+body {
+  height: 100%;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div.app-content {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  width: 50%;
+  margin: 5% auto 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  div.app-content {
+    width: 90%;
+  }
+}
+
+h1.app-heading {
+  font-family: Merienda;
+  font-weight: bold;
+}
