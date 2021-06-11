@@ -1,0 +1,20 @@
+sudo: required
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t udeshyagiri/cgpa-client -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run -e CI=true udeshyagiri/cgpa-client npm test
+
+after_success:
+  - docker build -t udeshyagiri/cgpa-client ./client
+  - docker build -t udeshyagiri/cgpa-server ./server
+  # Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take those images and push them to docker hub
+  - docker push udeshyagiri/cgpa-client
+  - docker push udeshyagiri/cgpa-server
