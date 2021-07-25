@@ -1,4 +1,4 @@
-# My Kubernetes Project 🕸
+# Kubernetes CGPA Calculator
 
 ### [Click here](https://lucid.app/lucidchart/invitations/accept/inv_9ea862e3-6702-4d87-b85f-c2c20773860c?viewport_loc=-251%2C-2415%2C2482%2C1202%2C0_0) to view architecture diagrams
 
@@ -103,5 +103,10 @@ Create all the Kubernetes Objects
 kubectl apply -f k8s/
 ``` 
 <img src="screenshots/k8s-calc-create-objects.JPG" />
+
+If there is an error try deleting the server pod. An error may occur if the server pod is started before Redis and Postgres
+```
+kubectl delete pod <pod_name>
+```
 
 Check out the app on `localhost:80`
