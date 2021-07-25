@@ -1,4 +1,4 @@
-# Kubernetes CGPA Calculator
+# Kubernetes CGPA Calculator [![Build Status](https://www.travis-ci.com/udeshyaG/k8s-cgpa-calculator.svg?branch=master)](https://www.travis-ci.com/udeshyaG/k8s-cgpa-calculator)
 
 ### [Click here](https://lucid.app/lucidchart/invitations/accept/inv_9ea862e3-6702-4d87-b85f-c2c20773860c?viewport_loc=-251%2C-2415%2C2482%2C1202%2C0_0) to view architecture diagrams
 
