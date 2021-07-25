@@ -1,15 +1,107 @@
 # My Kubernetes Project 🕸
 
-## Technology Used 🌟
+### [Click here](https://lucid.app/lucidchart/invitations/accept/inv_9ea862e3-6702-4d87-b85f-c2c20773860c?viewport_loc=-251%2C-2415%2C2482%2C1202%2C0_0) to view architecture diagrams
 
-- React (frontend)
-- Node JS (backend)
+### Technology Used 🌟
+
+- Kubernetes (Container Orchestration)
+- Docker 🐳 (Containerization)
+- Travis CI 👷‍♂️ (Testing and Continuous Integration)
+- React ⚛ (frontend)
+- Node JS, Express (backend)
 - Postgres (database) 🐘
-- Redis (caching) ❤
-- Kubernetes
-- Docker 🐳
-- Travis CI 👷‍♂️
+- Redis (caching) 
 
-### Click here to view diagram of kubernetes cluster
+---
 
-[Cluster Diagram](https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#R7Vpbl9o2EP41PGaPbzLmkYVNmzZJ94Q2bR%2BFLUCpsFxZXiC%2FvpItGV%2FEJYAhYcues7ZGI1n%2BvpnRSHLPHS3XPzGYLD7QCJGeY0XrnjvuOY5j9W1xkZJNIfEDvxDMGY4Kkb0VTPBXpISWkmY4QmlNkVNKOE7qwpDGMQp5TQYZo6u62oyS%2BlMTOEctwSSEpC39E0d8UUgDYG3lPyM8X%2Bgn25aqWUKtrATpAkZ0VRG5Tz13xCjlxd1yPUJEgqdxKdq93VFbDoyhmB%2FT4PMfI%2B%2Bpb3%2F4iL3pbyMaf3Gy8I3q5QWSTL2wGizfaAQYzeIIyU6snvu4WmCOJgkMZe1KcC5kC74komSL2xkmZEQJZXlbdwbkn5CnnNF%2FUKXGz3%2ByBY15RV78hFwNDDGO1jvf2C5xFAaI6BJxthEqqoEmSZleoIqrCo%2Buki0qHPqaQqhsZ172vIVX3CiEvwFtx4C2T7hCoQa7%2F29GdcWbNHeLoVAQr7%2FeVoq7ubrmvUy14NdsiliMuPAcxxqRLOWIaSUx8mmzoZAVI9Dihg0IDnid6DqhMY1Rg30lggTPY1EMBWdiDO6jZBQL%2FxqqiiWOIvkYo2XVbe8CJuFZdZsAbZuwBwabcLoyCfdsk7DBUSYxIhjlHY5RQuhmmRdOt4hzokIEUBB5pqgQOFM3jwoXoNr1QY1q2zNw7Rj9vyOuvWtxPUHsRTr8q%2BXavTnXoMV16YBlPLbePYt%2FkiwswLzovDubOWFoQj3ypz64FOrWYQ%2Fzrwm63wK99IS7Bd1k6lcF3T4ih0SRSKpVkTK%2BoHMaQ%2FK0lTZm%2Bq3Oe0oTBfcXxPlGrRBgxmmdjOKZ8kH7gRXjohkL0Z43Cgo9Dtkc8T16AzNRDBHI8Ut9HBeHPWih%2FnGO47WybWnp55h2BNNFrmt3E6Adq221AFzRagct%2BB4zTGR4%2FoRgKK%2FDJPm%2BMPQa65mbY2j3f3BHt50jPd32b%2Bnq5Q7CVXEWaLLNX6p9XvhbFh76QJfH62rteNOrLtOuTNBNY7EeZjUY00hkF9Yvk%2B8rhjTjsGeIIcZE2e0siOxeAbcWKuctk55pyucs3xIZQw6nMEW7lkj15ZBp5fTDLZE8UGceOAbmTdthQWfMt9P1CkX3k7APDgNvSti7w72dOnbkcZ9QhNNX5GP%2BoJ6hub57nI%2F1O%2BO6nedqUu7GwXz3MOomB%2BsMdMd9rflaeUR3KF8Dt0zXnK42YgWHXOYUhY4c5JE7rBL893CKSJ3S4w9PxJyJv8Jp3p%2FkNKE45jlu4LEHxvscTZ2cqsa98qijyv8eM9%2FpltaDrc969YK1KB1Nsur6Wb5LRYXOZqkwrqYVlCM4wzDA%2F457wHHPXQjnTYeMwU1FQVlrm3L9GYHnNiJ846j7kH4AGuZSjOCyxtNOZy8ZVXRIgQm%2B76iyY2ooo0pfr7YVufobhlPDiuq4nLX1YYZT76HDqGPaQO%2FkXPBdLBdXMvlTe8X3fCboN7JC98idjs62S51%2Bi%2BdnxFIssvCc5c%2BUZEuUZ%2BYQL89DvLZv1MzKgxCZs%2FJpAOQmcyf7Db5xp8mwXe11hn97LdQOmXE0lF%2BNyfBIYJri8LTN53NnyHZ48hrmDAYPoN5JMcmrdntmx6ZjtHsqsoBWT5cKeNoTDQEvTWB8esD7ncHZTFC2jWFFf0fMj82p7qT5cv%2FUd8Cd9tjs5a3pApObKG4%2FXizUt5%2BAuk%2F%2FAQ%3D%3D)
+### Kubernetes Cluster Diagram
+<img src="screenshots/k8s-calc-cluster-diagram.JPG" />
+
+### Explanation
+<table>
+    <tbody>
+    <tr>
+      <th>Deployment</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Client</td>
+      <td>
+        <ul>
+          <li>This is the front end of the app</li>
+          <li>The client container has <strong>Nginx</strong> installed with the built react code</li>
+          <li>Nginx serves the built react app from <code>build</code> folder</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Server</td>
+      <td>
+        <ul>
+          <li>Handles request to <code>/api</code></li>
+          <li>Backend of the application. Handles connection to Postgres and Redis</li>
+          <li>Handles calculation logic</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Postgres</td>
+      <td>
+        <ul>
+          <li>Handles all the data of the application</li>
+          <li>Uses a <strong>Persistent Volume Claim</strong> to persist data even if pod crashes</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Redis</td>
+      <td>
+        <ul>
+          <li>In Memory data store used as a cache</li>
+          <li>Stores data as simple key value pairs</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+### Caching Mechanism
+<img src="screenshots/k8s-calc-caching-diagram.JPG" />
+- Server gets data from the Redis server
+- If list is empty then server gets data from Postgres 
+- This data is added to Redis
+
+---
+
+### Screenshots
+1. Homepage - Enter name and semester. This gives you the list of subjects. Enter marks
+<img src="screenshots/k8s-calc-ss-home.JPG" />
+
+2. List of names and CGPA. Caching Mechanism Applied here
+<img src="screenshots/k8s-calc-ss-list.JPG" />
+
+3. Travis CI dashboard
+<img src="screenshots/k8s-calc-ss-travis.JPG" />
+
+---
+
+### Install and run locally
+Setup the Ingress Nginx Controller
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.48.1/deploy/static/provider/cloud/deploy.yaml
+```
+
+Check the installation
+```
+kubectl get pods -n ingress-nginx
+```
+
+Create all the Kubernetes Objects
+```
+kubectl apply -f k8s/
+``` 
+<img src="screenshots/k8s-calc-create-objects.JPG" />
+
+Check out the app on `localhost:80`
